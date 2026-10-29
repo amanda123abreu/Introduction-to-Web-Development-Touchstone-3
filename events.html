@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops and requests | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+  <header>
+    <img class="logo" src="media/yoga-logo.png" alt="Riverbend Yoga Studio logo">
+    <p>Riverbend Yoga Studio</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html" aria-current="page">Events and requests</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="events">
+    <h1>Workshops and requests</h1>
+    <section>
+      <h2>Monthly workshops</h2>
+      <p>Explore our proposed monthly workshop rotation. Request
+        confirmed dates, times, prices, and available spaces.</p>
+      <ul>
+        <li>January: Beginner Foundations — basic poses and props.</li>
+        <li>February: Breathe and Unwind — comfortable relaxation.</li>
+        <li>March: Chair Yoga — supported seated movement.</li>
+      </ul>
+      <figure>
+        <img src="media/yoga-workshop.png"
+          alt="Instructor facing a group seated on yoga mats">
+        <figcaption>Beginner Foundations offers a welcoming space
+          to learn together and ask questions.</figcaption>
+      </figure>
+    </section>
+    <section id="request">
+      <h2>Request a spot or more information</h2>
+      <p id="form-note">Fields marked required must be completed.
+        This classroom demonstration does not send or store requests.
+        A request would not guarantee a reservation.</p>
+      <form action="events.html#request" method="get"
+        aria-describedby="form-note">
+        <fieldset>
+          <legend>Your contact details</legend>
+          <p>
+            <label for="name">Name (required)</label>
+            <input id="name" name="name" type="text"
+              autocomplete="name" required minlength="2" maxlength="80">
+          </p>
+          <p>
+            <label for="email">Email (required)</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" required maxlength="120">
+          </p>
+          <p>
+            <label for="phone">Phone (optional, for phone contact)</label>
+            <input id="phone" name="phone" type="tel"
+              autocomplete="tel" maxlength="30">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Your yoga interests</legend>
+          <p>
+            <label for="interest">Class or event interest (required)</label>
+            <select id="interest" name="interest" required>
+              <option value="">Choose an option</option>
+              <option value="gentle">Gentle Yoga</option>
+              <option value="vinyasa">Vinyasa Yoga</option>
+              <option value="restorative">Restorative Yoga</option>
+              <option value="private">Private session</option>
+              <option value="foundations">Beginner Foundations</option>
+              <option value="breathing">Breathe and Unwind</option>
+              <option value="chair">Chair Yoga workshop</option>
+            </select>
+          </p>
+          <p>
+            <label for="experience">Experience level (required)</label>
+            <select id="experience" name="experience" required>
+              <option value="">Choose a level</option>
+              <option value="new">New to yoga</option>
+              <option value="some">Some experience</option>
+              <option value="regular">Regular practice</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Preferred contact method (required)</legend>
+          <p>
+            <input id="by-email" name="contact-method" type="radio"
+              value="email" required>
+            <label for="by-email">Email</label>
+          </p>
+          <p>
+            <input id="by-phone" name="contact-method" type="radio"
+              value="phone" required>
+            <label for="by-phone">Phone (add your number above)</label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="5" cols="35"
+            maxlength="1000" aria-describedby="message-help"></textarea>
+        </p>
+        <p id="message-help">Share questions, preferred times, or access
+          requests. Please avoid sensitive medical information.</p>
+        <button type="submit">Check required fields — demo only</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Riverbend Yoga Studio — Move gently. Feel welcome.</p>
+    <p><a href="events.html#request">Request class information</a></p>
+  </footer>
+</body>
+</html>
