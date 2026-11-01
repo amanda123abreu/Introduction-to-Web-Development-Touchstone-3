@@ -22,6 +22,21 @@
   </header>
   <main id="main-content" class="services">
     <h1>Classes and private sessions</h1>
+    <section aria-labelledby="selector-title">
+      <h2 id="selector-title">Choose a practice for today</h2>
+      <label for="preference">What would you like from your practice?</label>
+      <select id="preference">
+        <option value="">Choose a goal</option>
+        <option value="gentle">A gentle introduction</option>
+        <option value="vinyasa">Movement and energy</option>
+        <option value="restorative">Rest and relaxation</option>
+      </select>
+      <div id="recommendation" aria-live="polite"></div>
+      <p id="storage-status" role="status"></p>
+      <button id="clear-preference" type="button">Forget my preference</button>
+      <p><a href="events.html#request">Ask about your selected class</a></p>
+      <noscript>Enable JavaScript for recommendations. All class descriptions remain available below.</noscript>
+    </section>
     <section>
       <h2>Find your class</h2>
       <article id="gentle">
@@ -62,5 +77,6 @@
     <p>Riverbend Yoga Studio — Move gently. Feel welcome.</p>
     <p><a href="events.html#request">Request class information</a></p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

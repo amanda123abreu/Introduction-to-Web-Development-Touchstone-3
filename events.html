@@ -43,7 +43,8 @@
       <p id="form-note">Fields marked required must be completed.
         This classroom demonstration does not send or store requests.
         A request would not guarantee a reservation.</p>
-      <form action="events.html#request" method="get"
+      <p id="restored-interest" role="status"></p>
+      <form id="request-form" action="events.html#request" method="get"
         aria-describedby="form-note">
         <fieldset>
           <legend>Your contact details</legend>
@@ -109,6 +110,7 @@
         <p id="message-help">Share questions, preferred times, or access
           requests. Please avoid sensitive medical information.</p>
         <button type="submit">Check required fields — demo only</button>
+        <p id="form-status" role="status"></p>
       </form>
     </section>
   </main>
@@ -116,5 +118,6 @@
     <p>Riverbend Yoga Studio — Move gently. Feel welcome.</p>
     <p><a href="events.html#request">Request class information</a></p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
